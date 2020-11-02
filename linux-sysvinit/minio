@@ -9,9 +9,8 @@
 # Description:       starts minio using start-stop-daemon
 ### END INIT INFO
 
-DESC="MinIO object storage server"
 NAME=minio
-DAEMON=$(which minio)
+DAEMON=$(command -v minio)
 
 DAEMONUSER=minio-user
 PIDFILE=/var/run/$NAME.pid
